@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import Release, Patch, Product, Image
 
+
+
 @admin.register(Release)
 class ReleaseAdmin(admin.ModelAdmin):
     list_display = ('name', 'description')
